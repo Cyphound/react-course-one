@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import {Greeting, UserCard} from "./Greeting"
+import Product, {Navigation} from "./Product";
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
-
-function Greeting() {
-    const name = "Cyphound";
-
-    return <h1>{name}</h1>
-}
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-    <Greeting/>
-)
+  <>
+    <Greeting />
+    <UserCard />
+    <Product />
+    <Navigation/>
+  </>
+);
